@@ -24,14 +24,29 @@ http://scottr.org/presentations/git-in-5-minutes/
 ---------------------------------------------------------------------
 
 After creating an account, create a remote repository.
-The following is what I did for WanderingPath.
+The following is what I did for AttractingParticles
 
 http://help.github.com/create-a-repo/
 
-Create a New Repository
-Project Name: DartPen
+Create a New Repository (without README, since cloning will not be used)
+Project Name: AttractingParticles
+Based on: http://cssdeck.com/item/602/html5-canvas-particles-web-matrix
 Description: 
-  Drawing a path of segments, each having one or more lines.    
+  There are some particles on the canvas which start attracting each other when they come close. 
+  They will start drawing lines between them as they come closer to each other. 
+  The opacity of the lines depends upon the distance between the corresponding particles.
+  If the distance is larger, then the opacity will be lower.
+      
+Next steps:
+  mkdir AttractingParticles
+  cd AttractingParticles
+  git init
+  touch README
+  git status
+  git add .
+  git commit -m 'working version'
+  git remote add origin https://github.com/dzenanr/AttractingParticles.git
+  git push -u origin master   
 
 ----------------------------------------------------------------------
 
@@ -41,13 +56,13 @@ Clone a remote repository into a local repository.
 
 cd git/dart/teach
 git clone https://github.com/dzenanr/DartPen.git
-cd DartPen
+cd AttractingParticles
 
 Read+Write:
-https://github.com/dzenanr/DartPen.git
+https://github.com/dzenanr/AttractingParticles.git
 
 Read only:
-git://github.com/dzenanr/DartPen.git
+git://github.com/dzenanr/AttractingParticles.git
 
 Get the latest changes from the remote repository
 
@@ -58,7 +73,7 @@ git pull origin master
 
 Work with a local repository
 
-cd git/dart/taech/DartPen
+cd git/dart/taech/AttractingParticles
 
 git add .
 
@@ -108,7 +123,7 @@ git checkout s01a
 Switching from spiral to master
 
 to exclude js:
-git checkout dartpen.dart.js
+git checkout attractingparticles.dart.js
 or 
 (see http://scottr.org/presentations/git-in-5-minutes/)
 git stash
