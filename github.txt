@@ -55,7 +55,7 @@ Git with Git Bash
 Clone a remote repository into a local repository.
 
 cd git/dart/teach
-git clone https://github.com/dzenanr/DartPen.git
+git clone https://github.com/dzenanr/AttractingParticles.git
 cd AttractingParticles
 
 Read+Write:
