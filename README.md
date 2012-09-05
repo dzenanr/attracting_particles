@@ -1,4 +1,4 @@
-##Project 
+##attracting_particles 
 
 **Based on**
  
