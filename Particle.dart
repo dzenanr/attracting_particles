@@ -22,7 +22,7 @@ class Particle {
     radius = 4;
   }
 
-  // This is the method that will draw a particle on thcanvas.
+  // This is the method that will draw a particle on the canvas.
   // The `arc` method is used to draw a circle.
   // The `arc` method accepts four parameters.
   // the first two parameters depict the position
