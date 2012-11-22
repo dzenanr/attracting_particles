@@ -1,3 +1,5 @@
+library attracting_particles;
+
 import 'dart:html';
 import 'dart:isolate';
 import 'dart:math';

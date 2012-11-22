@@ -1,3 +1,5 @@
+part of attracting_particles;
+
 class Particle {
   var canvas;
   var context;
