@@ -1,7 +1,7 @@
 library attracting_particles;
 
 import 'dart:html';
-import 'dart:isolate';
+import 'dart:async';
 import 'dart:math';
 
 part 'particle.dart';

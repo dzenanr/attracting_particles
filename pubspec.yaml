@@ -1,7 +1,7 @@
 name: attracting_particles
 author: Dzenan Ridjanovic <dzenanr@gmail.com>
 homepage: http://ondart.me/
-version: 0.0.9
+version: 0.0.1
 description: >
   There are some particles on the canvas which start attracting each other when
   they come close. They will start drawing lines between them as they come closer
