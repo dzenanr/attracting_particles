@@ -8,9 +8,6 @@ part 'particle.dart';
 
 // Based on: http://cssdeck.com/item/602/html5-canvas-particles-web-matrix
 
-// The board is redrawn every interval ms.
-const int INTERVAL = 4;
-
 var canvas, context, particles;
 var particleCount = 40, minDist = 120;
 
@@ -95,6 +92,11 @@ draw() {
   update();
 }
 
+gameLoop(num delta) {
+  draw();
+  window.animationFrame.then(gameLoop);
+}
+
 main() {
   canvas = document.query('#canvas');
   context = canvas.getContext('2d');
@@ -109,7 +111,6 @@ main() {
     particles.add(new Particle(canvas, context));
   }
 
-  // Redraw every INTERVAL ms.
-  new Timer.periodic(const Duration(milliseconds: INTERVAL), (t) => draw());
+  window.animationFrame.then(gameLoop);
 }
 
