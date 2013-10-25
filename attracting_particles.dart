@@ -98,7 +98,7 @@ gameLoop(num delta) {
 }
 
 main() {
-  canvas = document.query('#canvas');
+  canvas = document.querySelector('#canvas');
   context = canvas.getContext('2d');
 
   // Set the canvas width and height to occupy full window.
