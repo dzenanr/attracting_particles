@@ -1,4 +1,6 @@
-part of attracting_particles;
+library attracting_particles;
+
+import 'dart:math';
 
 class Particle {
   var canvas;

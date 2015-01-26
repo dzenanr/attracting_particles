@@ -1,10 +1,7 @@
-library attracting_particles;
-
 import 'dart:html';
-import 'dart:async';
 import 'dart:math';
 
-part 'particle.dart';
+import 'package:attracting_particles/attracting_particles.dart';
 
 // Based on: http://cssdeck.com/item/602/html5-canvas-particles-web-matrix
 
